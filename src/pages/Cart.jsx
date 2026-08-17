@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import "../styles/Cart.css";
 
@@ -5,7 +6,8 @@ export default function Cart() {
     const { cartItems, increaseQuantity, decreaseQuantity, removeFromCart, clearCart } = useCart();
     const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
     const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-
+    const navigate = useNavigate();
+    
     return (
         <div className="cart-page">
 
@@ -76,7 +78,7 @@ export default function Cart() {
                             <strong>₹{totalPrice}</strong>
                         </div>
 
-                        <button className="checkout-btn">Proceed to Checkout</button>
+                        <button className="checkout-btn" onClick={() => navigate("/payment")}>Proceed to Checkout</button>
                     </div>
 
                 </div>

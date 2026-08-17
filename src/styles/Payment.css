@@ -1,0 +1,128 @@
+.payment-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+}
+.payment-container {
+  width: 100%;
+  max-width: 650px;
+  padding: 35px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+.payment-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.payment-header h1 {
+  margin-bottom: 8px;
+  color: #222;
+}
+.payment-header p {
+  margin: 0;
+  color: #777;
+}
+.payment-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.payment-method {
+  padding: 12px 8px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.payment-method.active {
+  border-color: #e85d04;
+  background-color: #fff3e8;
+  color: #e85d04;
+  font-weight: 600;
+}
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.input-group input {
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+}
+.input-group input:focus {
+  border-color: #e85d04;
+  box-shadow: 0 0 0 3px rgba(232, 93, 4, 0.1);
+}
+.payment-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.payment-error {
+  margin: 0;
+  padding: 10px;
+  background-color: #fff0f0;
+  color: #d32f2f;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+.cod-message {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff8f2;
+  text-align: center;
+}
+.cod-message h3 {
+  margin-top: 0;
+  color: #e85d04;
+}
+.cod-message p {
+  margin-bottom: 0;
+  color: #666;
+}
+.pay-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e85d04;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.pay-button:hover {
+  background-color: #d94f00;
+}
+@media (max-width: 600px) {
+  .payment-container {
+    padding: 25px 20px;
+  }
+  .payment-methods {
+    grid-template-columns: 1fr;
+  }
+  .payment-row {
+    grid-template-columns: 1fr;
+  }
+}

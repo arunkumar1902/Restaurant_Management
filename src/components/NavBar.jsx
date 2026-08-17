@@ -12,7 +12,7 @@ export default function NavBar() {
             </div >
             
             <div className='navbar-links'>
-                <NavLink className={({ isActive }) => { return (isActive ? "active" : "inActive") }} to='/home'>Home </NavLink>
+                <NavLink className={({ isActive }) => { return (isActive ? "active" : "inActive") }} to='/'>Home </NavLink>
                 <NavLink className={({ isActive }) => { return (isActive ? "active" : "inActive") }} to='/menu'>Menu</NavLink>
                 <NavLink className={({ isActive }) => { return (isActive ? "active" : "inActive") }} to='/about'>About</NavLink>
                 <NavLink className={({ isActive }) => { return (isActive ? "active" : "inActive") }} to='/contact'>Contact</NavLink>

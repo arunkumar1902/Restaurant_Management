@@ -2,6 +2,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import "../styles/Home.css";
+import price from "../components/price";
 
 export default function Home() {
   const api = "https://dummyjson.com/recipes?limit=8";
@@ -52,7 +53,7 @@ export default function Home() {
                 </div>
 
                 <div className="recipe-footer">
-                  <span className="difficulty">{recipe.difficulty}</span>
+                  <span>₹{price[recipe.id]}</span>
                   <button onClick={() => navigate(`/foodDetails/${recipe.id}`)}>View</button>
                 </div>
 

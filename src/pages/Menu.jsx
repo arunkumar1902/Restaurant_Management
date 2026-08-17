@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import useFetch from "../hooks/useFetch";
 import "../styles/Menu.css";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import price from "../components/price";
 
 export default function Menu() {
   const api = "https://dummyjson.com/recipes?limit=0";
@@ -143,7 +144,7 @@ export default function Menu() {
                 </div>
 
                 <div className="card-footer">
-                  <span className="difficulty">{recipe.difficulty}</span>
+                  <span>₹{price[recipe.id]}</span>
                   <button onClick={() => navigate(`/foodDetails/${recipe.id}`)}>View Details</button>
                 </div>
               </div>

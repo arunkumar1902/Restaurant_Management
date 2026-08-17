@@ -20,15 +20,15 @@ export default function Home() {
   return (
     <div className="home">
 
-      <section className="hero">
-        <div className="hero-content">
-          <p className="hero-subtitle"> Welcome to FoodieHub</p>
+      <section className="food">
+        <div className="food-content">
+          <p className="food-subtitle"> Welcome to FoodieHub</p>
           <h1>Delicious Food, <br />Made With Love</h1>
-          <p className="hero-description">Discover delicious dishes from around the world and enjoy your favorite meals.</p>
+          <p className="food-description">Discover delicious dishes from around the world and enjoy your favorite meals.</p>
           <button className="explore-btn"><Link to="/menu">  Explore Menu</Link></button>
         </div>
 
-        <div className="hero-image">
+        <div className="food-image">
           <img src={data?.recipes?.[0]?.image} alt={data?.recipes?.[0]?.name} />
         </div>
       </section>

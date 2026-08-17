@@ -1,0 +1,129 @@
+.contact-page {
+  min-height: 100vh;
+  background-color: #fafafa;
+  padding-bottom: 80px;
+}
+.contact-header {
+  text-align: center;
+  padding: 70px 20px 50px;
+  background-color: #fff3e8;
+}
+.contact-header p {
+  color: #e85d04;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.contact-header h1 {
+  font-size: 42px;
+  margin: 10px 0 15px;
+}
+.contact-header span {
+  color: #666;
+  font-size: 17px;
+}
+.contact-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.section-label {
+  color: #e85d04;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.contact-info h2 {
+  font-size: 38px;
+  margin: 10px 0 15px;
+}
+.contact-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+.contact-item {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+.contact-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff3e8;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.contact-item h3 {
+  margin: 0 0 6px;
+}
+.contact-item p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+.contact-card {
+  background-color: white;
+  padding: 45px;
+  border-radius: 15px;
+  box-shadow:0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  height: fit-content;
+}
+.contact-card-icon {
+  font-size: 55px;
+}
+.contact-card h2 {
+  font-size: 30px;
+  margin: 15px 0 10px;
+}
+.contact-card > p {
+  color: #666;
+  line-height: 1.6;
+}
+.contact-card-info {
+  margin-top: 30px;
+}
+.contact-card-info div {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.contact-card-info strong {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-card-info span {
+  color: #666;
+  font-size: 14px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.social-links span {
+  padding: 8px 12px;
+  background-color: #fff3e8;
+  color: #e85d04;
+  border-radius: 6px;
+  font-size: 13px;
+}
+@media (max-width: 800px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .contact-header h1 {
+    font-size: 32px;
+  }
+  .contact-card {
+    padding: 30px 20px;
+  }
+}
